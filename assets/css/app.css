@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h3, a {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+.main {
+    background-image: url('./assets/img/bg-technological.webp');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .media-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .media-box .content {
+    text-align: center;
+    padding: 18px 32px;
+    border-radius: 18px;
+    background-color: #ffffff05;
+}
+
+/* .main .media-box .content .content__title */
+/* .main .media-box .content .content__text-about */
+/* .main .media-box .content .content__link-contact */
