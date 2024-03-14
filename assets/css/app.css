@@ -1,10 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./_reset.css);
+@import url(./_main.css);
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Main Header (start) */
+.header {
+    width: 100%;
 }
+
+.header__content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: .3s ease;
+    border-radius: 4px;
+}
+
+.header__button:hover {
+    background-color: #e5ffe0;
+}
+/* Main Header (end) */
 
 body {
     width: 100vw;
@@ -18,14 +38,14 @@ h1, h3, a {
   font-style: normal;
 }
 
-.main {
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.main .backgroud-cover {
+.content .backgroud-cover {
     position: fixed;
     top: 0;
     left: 0;
@@ -37,7 +57,7 @@ h1, h3, a {
             animation: kenburns-top-left 20s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate both;
 }
 
-.main .contruct.card {
+.content .contruct.card {
     border: solid 1px #ccc;
     padding: 40px 70px;
     border-radius: 8px;
@@ -52,22 +72,22 @@ h1, h3, a {
 
 }
 
-.main .contruct .contruct__title {
+.content .contruct .contruct__title {
     color: #fbfbfb;
     text-align: center;
     margin-bottom: 15px;
 }
-.main .contruct .contruct__text-about {
+.content .contruct .contruct__text-about {
     color: #fbfbfb;
     text-align: center;
     font-weight: 400;
 }
 
-.main .contruct .content__link-contact {
+.content .contruct .content__link-contact {
     color: #fff;
     transition: .2s ease;
 }
-.main .contruct .content__link-contact:hover {
+.content .contruct .content__link-contact:hover {
     color: #eee;
 }
 
