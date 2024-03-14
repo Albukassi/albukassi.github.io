@@ -2,6 +2,30 @@
 @import url(./_reset.css);
 @import url(./_main.css);
 
+/* Main Header (start) */
+.header {
+    width: 100%;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: .3s ease;
+    border-radius: 4px;
+}
+
+.header__button:hover {
+    background-color: #e5ffe0;
+}
+/* Main Header (end) */
+
 body {
     width: 100vw;
     height: 100vh;
