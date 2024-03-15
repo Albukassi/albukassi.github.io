@@ -6,15 +6,21 @@
     width: 100%;
 }
 
+@media only screen and (min-width: 0) {
+    .container {
+        max-width: 320px;
+    }
+}
+
 @media only screen and (min-width: 320px) {
     .container {
-        max-width: 300px;
+        max-width: 320px;
     }
 }
 
 @media only screen and (min-width: 480px) {
     .container {
-        max-width: 420px;
+        max-width: 460px;
     }
 }
 
@@ -27,6 +33,12 @@
 @media only screen and (min-width: 767px) {
     .container {
         max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
     }
 }
 
