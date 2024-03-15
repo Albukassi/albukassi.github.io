@@ -29,12 +29,16 @@
     cursor: pointer;
 }
 
-.header__button-burguer img:nth-child(2) {
+.header__button-burguer--open img:nth-child(2) {
+    display: none;
+}
+
+.header__button-burguer--close img:nth-child(1) {
     display: none;
 }
 
 .header__nav {
-    /* display: none; */
+    display: none;
     position: absolute;
     /* border: solid 1px blue; */
     top: 100%;
@@ -43,6 +47,10 @@
     max-width: 27rem;
     height: calc(100vh - 5.6rem);
     box-shadow: 0 0 1rem 0 #0002;
+}
+
+.header__nav--show {
+    display: block;
 }
 
 .header__nav-top {
