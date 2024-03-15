@@ -10,7 +10,11 @@
 
 body {
     font-size: 1.6rem;
-    color: #151515
+    color: #151515;
+    background-color: gray;
+    font-family: 'robotoregular';
+    /* font-optical-sizing: auto;
+    font-style: normal; */
 }
 
 ul {

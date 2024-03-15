@@ -2,7 +2,9 @@
 
 .header {
     width: 100%;
-    border: solid 1px red;
+    /* border: solid 1px red; */
+    position: relative;
+    background-color: #fff;
 }
 
 .header__content {
@@ -32,8 +34,78 @@
 }
 
 .header__nav {
-    display: none;
+    /* display: none; */
     position: absolute;
+    /* border: solid 1px blue; */
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    max-width: 27rem;
+    height: calc(100vh - 5.6rem);
+    box-shadow: 0 0 1rem 0 #0002;
+}
+
+.header__nav-top {
+    padding: 30px;
+}
+
+.header__nav-top__contact-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header__nav-top__contact-item a {
+    transition: var(--transition-button);
+}
+
+.header__nav-top__contact-item:nth-child(1) a {
+    font-size: 1.4rem;
+    font-family: 'robotomedium';
+}
+
+.header__nav-top__contact-item:nth-child(2) a {
+    font-size: 1.5rem;
+}
+
+.header__nav-top__socials {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__nav-top__socials li a {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e3e3;
+    transition: var(--transition-button);
+}
+
+.header__nav-top__socials li a:hover {
+    background-color: #cfcfcf;
+}
+
+.header__nat-bottom__item a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 100%;
+    transition: var(--transition-button);
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    letter-spacing: 1.13px;
+    margin-bottom: .6rem;
+}
+
+.header__nat-bottom__item a:hover,
+.header__nat-bottom__item--active a {
+    font-family: 'robotomedium';
+    color: #fff;
+    background-color: var(--color-primary);
 }
 
 /* Main Header (end) */
