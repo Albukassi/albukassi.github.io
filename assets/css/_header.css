@@ -1,0 +1,39 @@
+/* Main Header (start) */
+
+.header {
+    width: 100%;
+    border: solid 1px red;
+}
+
+.header__content {
+    display: flex;
+    gap: 1.5rem;
+    padding: .4rem;
+}
+
+.header__brand {
+    order: 2;
+}
+
+.header__brand img {
+    width: 16rem;
+    height: 4.1rem;
+}
+
+.header__button-burguer {
+    order: 1;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__button-burguer img:nth-child(2) {
+    display: none;
+}
+
+.header__nav {
+    display: none;
+    position: absolute;
+}
+
+/* Main Header (end) */
