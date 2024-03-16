@@ -1,3 +1,21 @@
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*                      1 - Preloader                      */
+/* ******* ******* ******* ******* ******* ******* ******* */
+
+// const preloader = document.querySelector('.preloader');
+
+// preloader.addEventListener('click', function a() {
+//     preloader.classList.add('preloader--loaded');
+// })
+// window.addEventListener('laod', function name() {
+//     alert('carregou');
+//     preloader.classList.add('preloader--loaded');
+// });
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*                        2 - Header                        */
+/* ******* ******* ******* ******* ******* ******* ******* */
+
 let header_button_burguer = document.getElementById('header-button-burguer');
 let header_nav = document.getElementById('header-nav');
 
