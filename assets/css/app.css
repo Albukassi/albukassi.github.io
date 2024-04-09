@@ -459,28 +459,56 @@ body {
     z-index: 1;
 }
 .banner .banner__content .slick-arrow.slick-prev {
-    left: 30px;
-    width: 30px;
+    left: 2rem;
+    width: 2rem;
 }
 .banner .banner__content .slick-arrow.slick-prev::before {
     content: url(../images/icons/square-caret-left-regular.svg);
 }
 .banner .banner__content .slick-arrow.slick-next {
-    right: 30px;
-    width: 30px;
+    right: 2rem;
+    width: 2rem;
 }
 .banner .banner__content .slick-arrow.slick-next::before {
     content: url(../images/icons/square-caret-right-regular.svg);
 }
 .banner .banner__content .slick-dots {
-    bottom: 20px;
+    bottom: 2rem;
 }
 .banner .banner__content .slick-dots *::before {
-    font-size: 12px;
+    font-size: 1.2rem;
     color: var(--color-primary)
 }
 .banner .banner__background{
     background-repeat: no-repeat;
     background-size: cover;
-    height: 39.2vw;
+    background-position-x: 70%;
+    height: 90vw;
+}
+
+@media only screen and (min-width: 576px) {
+    .banner .banner__background{
+        height: 70vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .banner .banner__content .slick-arrow.slick-prev {
+        left: 3rem;
+        width: 3rem;
+    }
+    .banner .banner__content .slick-arrow.slick-next {
+        right: 3rem;
+        width: 3rem;
+    }
+    .banner .banner__background{
+        height: 50vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .banner .banner__background{
+        background-position-x: 50%;
+        height: 39.2vw;
+    }
 }

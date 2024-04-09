@@ -40,6 +40,14 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
     });
 });
