@@ -1,10 +1,17 @@
 /* 
-1 - Reset CSS
-2 - General configurations
-3 - Preloader
-4 - Header
-5 - Footer
-6 - Banner Hero Slider
+
+Name: Portfólio Albukassi Soluções em Informática
+Author: Nathan Albuquerque
+
+Structure Tree:
+    1 - Reset CSS
+    2 - General configurations
+    3 - Preloader
+    4 - Header
+    5 - Footer
+    6 - Banner Hero Slider
+    7 - About Company
+
 */
 
 
@@ -446,10 +453,18 @@ body {
 /*                        5 - Footer                        */
 /* ******* ******* ******* ******* ******* ******* ******* */
 
+/* Any code here */
+
+
+
+
+
+
+
 /* ******* ******* ******* ******* ******* ******* ******* */
 /*                  6 - Banner Hero Slider                  */
 /* ******* ******* ******* ******* ******* ******* ******* */
-/* .banner{} */
+
 .banner .banner__content {
     cursor: grab;
 }
@@ -572,13 +587,13 @@ body {
     .banner .banner__texts {
         gap: 1.4rem;
     }
-    
+
     .banner .banner__texts .banner__texts__title {
         letter-spacing: .25rem;
         line-height: 3rem;
         font-size: 2.6rem;
     }
-    
+
     .banner .banner__texts .banner__texts__subtitle {
         letter-spacing: .2rem;
         font-size: 1.7rem;
@@ -597,20 +612,20 @@ body {
     .banner .banner__texts {
         gap: 1.4rem;
     }
-    
+
     .banner .banner__texts .banner__texts__title {
         letter-spacing: .3rem;
         line-height: 4rem;
         font-size: 3.2rem;
     }
-    
+
     .banner .banner__texts .banner__texts__subtitle {
         letter-spacing: .24rem;
         line-height: 2.5rem;
         font-size: 2rem;
         margin-bottom: 3rem;
     }
-    
+
     .banner .banner__texts .banner__texts__cta {
         padding: 2.4rem 6rem;
         font-size: 1.6rem;
@@ -622,22 +637,87 @@ body {
     .banner .banner__texts {
         gap: 3.5rem;
     }
-    
+
     .banner .banner__texts .banner__texts__title {
         letter-spacing: .4rem;
         line-height: 6rem;
         font-size: 5rem;
     }
-    
+
     .banner .banner__texts .banner__texts__subtitle {
         letter-spacing: .3rem;
         line-height: 3.5rem;
         font-size: 3rem;
     }
-    
+
     .banner .banner__texts .banner__texts__cta {
         padding: 3rem 7rem;
         font-size: 2rem;
         letter-spacing: .5rem;
     }
+}
+
+
+
+
+
+
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*                    7 - About Company                    */
+/* ******* ******* ******* ******* ******* ******* ******* */
+
+.about .about__content {
+    padding-top: 6rem;
+}
+
+.about .about__title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'robotoregular';
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.about .about__menu {
+    border-top: .1rem solid var(--color-primary);
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem 4rem;
+}
+
+.about .about__menu div {
+    display: flex;
+}
+
+.about .about__menu div:nth-child(odd) {
+    justify-content: end;
+}
+
+.about .about__menu__link {
+    font-family: 'robotobold';
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    position: relative;
+}
+
+.about .about__menu__link::before {
+    content: '';
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    background-color: #ccc;
+    top: 55%;
+    transform: translateY(-50%);
+    left: -1.6rem;
+    border-radius: 50%;
+}
+
+.about .about__menu__link:hover::before {
+    background-color: var(--color-primary);
+}
+
+.about .about__menu__link--active::before  {
+    background-color: var(--color-primary);
 }
