@@ -1,10 +1,17 @@
 /* 
-1 - Reset CSS
-2 - General configurations
-3 - Preloader
-4 - Header
-5 - Footer
-6 - Banner Hero Slider
+
+Name: Portfólio Albukassi Soluções em Informática
+Author: Nathan Albuquerque
+
+Structure Tree:
+    1 - Reset CSS
+    2 - General configurations
+    3 - Preloader
+    4 - Header
+    5 - Footer
+    6 - Banner Hero Slider
+    7 - About Company
+
 */
 
 
@@ -29,7 +36,7 @@
     --transition-button: all 0.2s ease-out;
     --color-primary: #28bd25;
     --color-secondary: #fff700;
-    --color-text: #151515;
+    --color-text: #232323;
 }
 
 body {
@@ -446,10 +453,18 @@ body {
 /*                        5 - Footer                        */
 /* ******* ******* ******* ******* ******* ******* ******* */
 
+/* Any code here */
+
+
+
+
+
+
+
 /* ******* ******* ******* ******* ******* ******* ******* */
 /*                  6 - Banner Hero Slider                  */
 /* ******* ******* ******* ******* ******* ******* ******* */
-/* .banner{} */
+
 .banner .banner__content {
     cursor: grab;
 }
@@ -572,13 +587,13 @@ body {
     .banner .banner__texts {
         gap: 1.4rem;
     }
-    
+
     .banner .banner__texts .banner__texts__title {
         letter-spacing: .25rem;
         line-height: 3rem;
         font-size: 2.6rem;
     }
-    
+
     .banner .banner__texts .banner__texts__subtitle {
         letter-spacing: .2rem;
         font-size: 1.7rem;
@@ -597,20 +612,20 @@ body {
     .banner .banner__texts {
         gap: 1.4rem;
     }
-    
+
     .banner .banner__texts .banner__texts__title {
         letter-spacing: .3rem;
         line-height: 4rem;
         font-size: 3.2rem;
     }
-    
+
     .banner .banner__texts .banner__texts__subtitle {
         letter-spacing: .24rem;
         line-height: 2.5rem;
         font-size: 2rem;
         margin-bottom: 3rem;
     }
-    
+
     .banner .banner__texts .banner__texts__cta {
         padding: 2.4rem 6rem;
         font-size: 1.6rem;
@@ -622,22 +637,280 @@ body {
     .banner .banner__texts {
         gap: 3.5rem;
     }
-    
+
     .banner .banner__texts .banner__texts__title {
         letter-spacing: .4rem;
         line-height: 6rem;
         font-size: 5rem;
     }
-    
+
     .banner .banner__texts .banner__texts__subtitle {
         letter-spacing: .3rem;
         line-height: 3.5rem;
         font-size: 3rem;
     }
-    
+
     .banner .banner__texts .banner__texts__cta {
         padding: 3rem 7rem;
         font-size: 2rem;
         letter-spacing: .5rem;
     }
+}
+
+
+
+
+
+
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*                    7 - About Company                    */
+/* ******* ******* ******* ******* ******* ******* ******* */
+
+.about .about__content {
+    padding-top: 6rem;
+}
+
+.about .about__title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'robotoregular';
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: .05rem;
+}
+
+.about .about__menu {
+    border-top: .1rem solid var(--color-primary);
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem 4rem;
+}
+
+.about .about__menu div {
+    display: flex;
+}
+
+.about .about__menu div:nth-child(odd) {
+    justify-content: end;
+}
+
+.about .about__menu__link {
+    font-family: 'robotobold';
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    position: relative;
+}
+
+.about .about__menu__link::before {
+    content: '';
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    background-color: #ccc;
+    top: 55%;
+    transform: translateY(-50%);
+    left: -1.6rem;
+    border-radius: 50%;
+}
+
+.about .about__menu__link:hover::before {
+    background-color: var(--color-primary);
+}
+
+.about .about__menu__link--active::before  {
+    background-color: var(--color-primary);
+}
+
+/* services */
+
+.about .about__dynamic__section.about__services {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    gap: 5rem;
+    padding-top: 6rem;
+}
+
+.about .about__services__card {
+    text-align: center;
+}
+
+.about .about__services__card img {
+    box-sizing: content-box;
+    padding: 1.4rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px 0 #3333;
+    margin-bottom: 2rem;
+    transition: var(--transition-button);
+}
+
+.about .about__services__card:hover img {
+    background-color: var(--color-secondary);
+}
+
+.about .about__services__card .about__services__card__title {
+    font-size: 2rem;
+    font-family: 'robotomedium';
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: 1.4rem;
+}
+
+.about .about__services__card .about__services__card__text {
+    font-family: 'robotoregular';
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: .075rem;
+}
+
+/* mission */
+
+.about .about__dynamic__section.about__mission {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    gap: 2rem;
+    padding-top: 6rem;
+}
+
+.about .about__mission__image {
+    width: 70%;
+    height: auto;
+    display: inline;
+    margin-inline: auto;
+}
+
+.about .about__mission__texts {
+    text-align: center;
+}
+
+.about .about__mission__title {
+    font-size: 2rem;
+    font-family: 'robotomedium';
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: 2.5rem;
+}
+
+.about .about__mission__text {
+    font-size: 1.5rem;
+    font-family: 'robotoregular';
+    font-weight: 400;
+    letter-spacing: .12rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.about .about__mission__link {
+    font-size: 1.8rem;
+    font-family: 'robotoregular';
+    font-weight: 400;
+    letter-spacing: .12rem;
+}
+
+.about .about__mission__link:hover {
+    color: var(--color-primary);
+}
+
+/* vision */
+
+.about .about__dynamic__section.about__vision {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    gap: 2rem;
+    padding-top: 6rem;
+}
+
+.about .about__vision__image {
+    width: 70%;
+    height: auto;
+    display: inline;
+    margin-inline: auto;
+}
+
+.about .about__vision__texts {
+    text-align: center;
+}
+
+.about .about__vision__title {
+    font-size: 2rem;
+    font-family: 'robotomedium';
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: 2.5rem;
+}
+
+.about .about__vision__text {
+    font-size: 1.5rem;
+    font-family: 'robotoregular';
+    font-weight: 400;
+    letter-spacing: .12rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.about .about__vision__link {
+    font-size: 1.8rem;
+    font-family: 'robotoregular';
+    font-weight: 400;
+    letter-spacing: .12rem;
+}
+
+.about .about__vision__link:hover {
+    color: var(--color-primary);
+}
+
+/* goals */
+
+.about .about__dynamic__section.about__goals {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    gap: 2rem;
+    padding-top: 6rem;
+}
+
+.about .about__goals__image {
+    width: 70%;
+    height: auto;
+    display: inline;
+    margin-inline: auto;
+}
+
+.about .about__goals__texts {
+    text-align: center;
+}
+
+.about .about__goals__title {
+    font-size: 2rem;
+    font-family: 'robotomedium';
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: 2.5rem;
+}
+
+.about .about__goals__text {
+    font-size: 1.5rem;
+    font-family: 'robotoregular';
+    font-weight: 400;
+    letter-spacing: .12rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.about .about__goals__link {
+    font-size: 1.8rem;
+    font-family: 'robotoregular';
+    font-weight: 400;
+    letter-spacing: .12rem;
+}
+
+.about .about__goals__link:hover {
+    color: var(--color-primary);
 }
