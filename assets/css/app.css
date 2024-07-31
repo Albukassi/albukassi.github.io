@@ -5,6 +5,7 @@
 4 - Header
 5 - Footer
 6 - Banner Hero Slider
+7 - About
 */
 
 
@@ -248,11 +249,14 @@ body {
     display: none;
     position: absolute;
     top: 100%;
+    /* position: fixed;
+    top: 5.5rem; */
     left: 0;
     background-color: #fff;
     max-width: 27rem;
     height: calc(100vh - 5.6rem);
-    box-shadow: 0 0 1rem 0 #0002;
+    box-shadow: 0 0 1rem 0 #0002;   
+    z-index: 2;
 }
 
 .header__nav--show {
@@ -640,4 +644,112 @@ body {
         font-size: 2rem;
         letter-spacing: .5rem;
     }
+}
+
+
+
+
+
+
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*                        7 - About                        */
+/* ******* ******* ******* ******* ******* ******* ******* */
+
+.about {
+    padding: 5rem 0;
+}
+
+.about__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.about__title {
+    text-align: center;
+    font-size: 2.6rem;
+    padding-bottom: .4rem;
+    margin-bottom: 1.4rem;
+    border-bottom: solid .3rem var(--color-primary);
+    font-weight: 400;
+    width: 100%;
+}
+
+.about__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+    width: 80%;
+    gap: .6rem 2rem;
+}
+
+.about__menu__link {
+    font-size: 1.9rem;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.about__menu__link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    transition: .2s ease;
+}
+
+.about__menu__link.active::before, .about__menu__link:hover::before {
+    left: 0;
+}
+
+/* .about__menu__link:nth-child(odd) {
+    text-align: right;
+} */
+
+.about__dynamic__section {
+    display: none;
+}
+
+.about__dynamic__section.active {
+    display: flex;
+}
+
+.about__dynamic__section.about__services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.about__services__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__services__card .img {
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    box-shadow: 4px 4px 10px 0 #0001;
+    margin-bottom: 2rem;
+}
+
+.about__services__card__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about__services__card__text {
+    text-align: center;
 }

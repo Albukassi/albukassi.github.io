@@ -51,3 +51,20 @@ $(document).ready(function () {
         ]
     });
 });
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*                      4 - About Menu                      */
+/* ******* ******* ******* ******* ******* ******* ******* */
+
+const aboutServices = document.getElementById('about-services');
+const aboutMission = document.getElementById('about-mission');
+const aboutVision = document.getElementById('about-vision');
+const aboutGoals = document.getElementById('about-goals');
+
+function alter_about_content(sectionName) {
+    aboutServices.classList.remove('active');
+    aboutMission.classList.remove('active');
+    aboutVision.classList.remove('active');
+    aboutGoals.classList.remove('active');
+    document.getElementById(sectionName).classList.add('active');
+}
