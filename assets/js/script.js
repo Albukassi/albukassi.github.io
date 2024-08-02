@@ -65,7 +65,34 @@ function alter_about_content(sectionName) {
         aboutSection.classList.remove('active');
         aboutSectionLinks[counter++].classList.remove('active');
     });
-    
+
     document.getElementById(sectionName).classList.add('active');
     document.getElementById(sectionName + '-link').classList.add('active');
 }
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*                  5 - Services Carousel                  */
+/* ******* ******* ******* ******* ******* ******* ******* */
+
+$(document).ready(function () {
+    $('.services__carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+});

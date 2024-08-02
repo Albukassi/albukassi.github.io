@@ -6,6 +6,7 @@
 5 - Footer
 6 - Banner Hero Slider
 7 - About
+8 - Services
 */
 
 
@@ -32,6 +33,7 @@
     --color-secondary: #fff700;
     --color-text: #151515;
     --color-text-2: #737373;
+    --color-background: #f3fdf3;
 }
 
 body {
@@ -659,6 +661,7 @@ body {
 
 .about {
     padding: 5rem 0;
+    background-color: var(--color-background);
 }
 
 .about__header {
@@ -996,4 +999,33 @@ body {
     .about__goals__texts .about__goals__text {
         line-height: 2.8rem;
     }
+}
+
+
+
+
+
+
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*                       8 - Services                       */
+/* ******* ******* ******* ******* ******* ******* ******* */
+
+.services {
+    padding: 5rem 0;
+}
+
+.services__title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.services__carousel {
+    padding: 0 4rem;
+}
+
+.services__item__image {
+    width: 100%;
+    height: auto;
 }
