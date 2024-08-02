@@ -744,13 +744,13 @@ body {
     margin-bottom: 2rem;
 }
 
+.about__services__card__texts {
+    text-align: center;
+}
+
 .about__services__card__title {
     font-size: 2rem;
     margin-bottom: 1rem;
-}
-
-.about__services__card__text {
-    text-align: center;
 }
 
 /* About Mission */
@@ -874,4 +874,126 @@ body {
 
 .about__goals__texts .about__goals__link:hover {
     text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+    .about {
+        padding: 3rem 0;
+    }
+    
+    /* .about__header {
+        margin-bottom: 5rem;
+    } */
+
+    .about__title {
+        font-size: 3.4rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .about__menu {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 60%;
+        width: 60%;
+    }
+    
+    .about__menu__link {
+        font-size: 2.2rem;
+        width: min-content;
+        padding-left: 2rem;
+    }
+
+    .about__menu__link::before {
+        left: -2rem;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    
+    .about__menu__link.active::before, .about__menu__link:hover::before {
+        left: 0rem;
+    }
+
+    /* About Services */
+
+    .about__dynamic__section.about__services.active {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 4rem; */
+    }
+
+    .about__services__card {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .about__services__card__title {
+        font-size: 2.4rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .about__services__card__text {
+        font-size: 1.7rem;
+    }
+
+    /* About Mission */
+
+    .about__dynamic__section.about__mission {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .about__mission__texts {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .about__mission__texts .about__mission__title {
+        margin-block: 1rem 2rem;
+        font-size: 3.2rem;
+    }
+
+    .about__mission__texts .about__mission__text {
+        line-height: 2.8rem;
+    }
+
+    /* About Vision */
+
+    .about__dynamic__section.about__vision {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .about__vision__texts {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .about__vision__texts .about__vision__title {
+        margin-block: 1rem 2rem;
+        font-size: 3.2rem;
+    }
+
+    .about__vision__texts .about__vision__text {
+        line-height: 2.8rem;
+    }
+
+    /* About Goals */
+
+    .about__dynamic__section.about__goals {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .about__goals__texts {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .about__goals__texts .about__goals__title {
+        margin-block: 1rem 2rem;
+        font-size: 3.2rem;
+    }
+
+    .about__goals__texts .about__goals__text {
+        line-height: 2.8rem;
+    }
 }
