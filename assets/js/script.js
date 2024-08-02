@@ -56,15 +56,16 @@ $(document).ready(function () {
 /*                      4 - About Menu                      */
 /* ******* ******* ******* ******* ******* ******* ******* */
 
-const aboutServices = document.getElementById('about-services');
-const aboutMission = document.getElementById('about-mission');
-const aboutVision = document.getElementById('about-vision');
-const aboutGoals = document.getElementById('about-goals');
-
 function alter_about_content(sectionName) {
-    aboutServices.classList.remove('active');
-    aboutMission.classList.remove('active');
-    aboutVision.classList.remove('active');
-    aboutGoals.classList.remove('active');
+    const aboutSections = document.querySelectorAll('.about__dynamic__section');
+    const aboutSectionLinks = document.querySelectorAll('.about__menu__link');
+    let counter = 0;
+
+    aboutSections.forEach(aboutSection => {
+        aboutSection.classList.remove('active');
+        aboutSectionLinks[counter++].classList.remove('active');
+    });
+    
     document.getElementById(sectionName).classList.add('active');
+    document.getElementById(sectionName + '-link').classList.add('active');
 }
